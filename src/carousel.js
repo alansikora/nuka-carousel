@@ -488,7 +488,7 @@ const Carousel = React.createClass({
       slideHeight;
 
     slidesToScroll = this.props.slidesToScroll;
-    frame = ReactDom.findDOMNode(this.refs.frame);
+    frame = React.findDOMNode(this.refs.frame);
     firstSlide = frame.childNodes[0].childNodes[0];
     if (firstSlide) {
       firstSlide.style.height = 'auto';
